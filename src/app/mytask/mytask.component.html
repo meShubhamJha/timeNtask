@@ -1,0 +1,44 @@
+<mat-card style="padding: 2%; margin-bottom: 1%">
+  <mat-card-header>
+    <mat-card-title
+      >{{ task.name }} -
+      <span style="font-size: medium" [style.color]="priorityColor">{{
+        task.priority
+      }}</span></mat-card-title
+    >
+    <mat-card-subtitle>{{ task.description }} </mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-actions align="end">
+    <!-- here -->
+    <mat-chip-listbox aria-label="Fish selection">
+      <mat-chip-option
+        [selected]="task.status === 1"
+        color="primary"
+        (click)="updateTaskStatus(1)"
+      >
+        To Do
+      </mat-chip-option>
+      <mat-chip-option
+        [selected]="task.status === 2"
+        color="primary"
+        (click)="updateTaskStatus(2)"
+      >
+        In Progress
+      </mat-chip-option>
+      <mat-chip-option
+        [selected]="task.status === 3"
+        color="accent"
+        (click)="updateTaskStatus(3)"
+      >
+        Done
+      </mat-chip-option>
+    </mat-chip-listbox>
+    <!-- here -->
+  </mat-card-actions>
+  <mat-card-footer>
+    <mat-card-subtitle
+      >Due Date:
+      <span style="color: blue">{{ task.dueDate }} </span></mat-card-subtitle
+    >
+  </mat-card-footer>
+</mat-card>
