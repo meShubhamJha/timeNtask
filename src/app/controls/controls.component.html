@@ -12,7 +12,10 @@
 
   <div class="actions">
     <!-- <button class="btn btn-primary" (click)="addTask()">Add Task</button> -->
-    <button mat-raised-button color="primary">Add</button>
+    <button mat-raised-button color="primary" (click)="togglePopup()">
+      Add
+    </button>
+    <app-popup-form *ngIf="showPopup"></app-popup-form>
     <!-- create a button named as Delete Task -->
     <button mat-raised-button color="warn">Delete</button>
   </div>

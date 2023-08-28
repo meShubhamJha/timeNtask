@@ -24,6 +24,14 @@ import { MytaskAllComponent } from './mytask-all/mytask-all.component';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 import { ControlsComponent } from './controls/controls.component';
+import { PopupFormComponent } from './popup-form/popup-form.component';
+import { FormsModule } from '@angular/forms';
+
+import { MatSelectModule } from '@angular/material/select';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
 
 @NgModule({
   declarations: [
@@ -35,6 +43,7 @@ import { ControlsComponent } from './controls/controls.component';
     TabsComponent,
     MytaskAllComponent,
     ControlsComponent,
+    PopupFormComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,6 +57,12 @@ import { ControlsComponent } from './controls/controls.component';
     MatButtonModule,
     MatCheckboxModule,
     MatChipsModule,
+    MatInputModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

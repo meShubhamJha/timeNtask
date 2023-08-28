@@ -1,0 +1,35 @@
+<!-- popup-form.component.html -->
+<div class="popup">
+  <!-- give a form title -->
+  <h1 class="popup-title">Add Task</h1>
+  <mat-form-field>
+    <mat-label>Task Name</mat-label>
+    <input matInput required />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Task Description</mat-label>
+    <textarea matInput required></textarea>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Task Priority</mat-label>
+    <mat-select required>
+      <mat-option value="one">High</mat-option>
+      <mat-option value="two">Medium</mat-option>
+      <mat-option value="three">Low</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Due Date</mat-label>
+    <input matInput [matDatepicker]="picker" required />
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+  <!-- add a submit and cancel button -->
+  <div class="popup-buttons">
+    <button mat-raised-button color="primary">Submit</button>
+    <button mat-raised-button color="warn">Cancel</button>
+  </div>
+</div>
