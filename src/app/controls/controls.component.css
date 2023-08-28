@@ -1,0 +1,33 @@
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: aliceblue;
+}
+/* make control flex responsive */
+@media (max-width: 684px) {
+  .controls {
+    flex-direction: column;
+    padding: 2%;
+  }
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  padding: 1%;
+}
+
+.actions button {
+  margin-right: 10px;
+}
+
+.sorting {
+  display: flex;
+  flex-direction: row;
+  padding: 1%;
+}
+
+.sorting button {
+  margin-right: 10px;
+}

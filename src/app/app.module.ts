@@ -21,6 +21,10 @@ import { MatChipsModule } from '@angular/material/chips';
 import { TabsComponent } from './tabs/tabs.component';
 import { MytaskAllComponent } from './mytask-all/mytask-all.component';
 
+import { StoreModule } from '@ngrx/store';
+import { EffectsModule } from '@ngrx/effects';
+import { ControlsComponent } from './controls/controls.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +34,7 @@ import { MytaskAllComponent } from './mytask-all/mytask-all.component';
     MytasklistComponent,
     TabsComponent,
     MytaskAllComponent,
+    ControlsComponent,
   ],
   imports: [
     BrowserModule,

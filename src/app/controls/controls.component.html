@@ -1,0 +1,19 @@
+<!-- Create a horizontal flex -->
+<div class="controls">
+  <!-- create three buttons named as Priority, Due Date, Status. For each button also make a sorting icon on button -->
+  <!-- <button class="btn btn-primary" (click)="sort('priority')">Priority</button>
+    <button class="btn btn-primary" (click)="sort('dueDate')">Due Date</button>
+    <button class="btn btn-primary" (click)="sort('status')">Status</button> -->
+  <div class="sorting">
+    <button mat-stroked-button>Priority <mat-icon>sort</mat-icon></button>
+    <button mat-stroked-button>Due Date <mat-icon>sort</mat-icon></button>
+  </div>
+  <!-- create a button named as Add Task -->
+
+  <div class="actions">
+    <!-- <button class="btn btn-primary" (click)="addTask()">Add Task</button> -->
+    <button mat-raised-button color="primary">Add</button>
+    <!-- create a button named as Delete Task -->
+    <button mat-raised-button color="warn">Delete</button>
+  </div>
+</div>
